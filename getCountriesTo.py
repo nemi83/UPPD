@@ -126,7 +126,7 @@ if __name__ == '__main__':
 	inputVar = sys.argv[2]
 	me = MaltegoTransform()    
 	try:
-		trans = pd.read_excel("/home/tina/PycharmProjects/Maltego/UPPD/Data/nakazila_maltego.xls")
+		trans = pd.read_excel("Maltego/UPPD/Data/nakazila_maltego.xls")
 	except exception as e:
 		me.addUIMessage(str(e))
 	m_result = functions[transform](me, inputVar, trans)
